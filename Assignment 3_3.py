@@ -5,5 +5,9 @@ while True :
         numbers.append(x)
     if x == "finish" :
         break
-print(numbers)
 
+if numbers == sorted(numbers):
+    print ("Numbers are in order!")
+else:
+    print("Numbers aren't in order")
+    
