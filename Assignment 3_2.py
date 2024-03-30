@@ -1,11 +1,13 @@
-import random
-
-n = random.randint(1, 100)
-
 numbers = []
-for i in range(n):
-    x = random.randint(0, 100)
-    if x not in numbers:
-        numbers.append (x)
+while True :
+    x = input("enter your numbers in order, when finished enter finish: ")
+    if x != "finish":
+        numbers.append(x)
+    if x == "finish" :
+        break
+
+if numbers == sorted(numbers):
+    print ("Numbers are in order!")
+else:
+    print("Numbers aren't in order")
     
-print(numbers)
