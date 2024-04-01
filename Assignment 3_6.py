@@ -1,4 +1,10 @@
-import math
-a=int(input("Enter your first number:"))
-b=int(input("Enter your second number:"))
-print("The greatest common divisor of the two numbers is:",math.lcm(a,b))
+first_number = int(input("Enter first number: "))
+second_number = int(input("Enter second number: "))
+
+for i in range (max(first_number, second_number), 1 + (first_number * second_number)) :
+    if i % first_number == i % second_number == 0:
+        lcm = i  
+        break
+
+print("lcm =", lcm)
+
